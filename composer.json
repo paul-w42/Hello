@@ -1,0 +1,12 @@
+{
+  "name": "paulwood/328/Hello",
+  "authors": [
+    {
+      "name": "Paul Woods",
+      "email": "paul.woods@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
