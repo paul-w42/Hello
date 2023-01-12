@@ -3,6 +3,7 @@
 // This is my CONTROLLER for the hello project
 
 // Turn on error reporting (probably want off when live)
+// this will turn it on for each page in our project
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -15,7 +16,9 @@ $f3 = Base::instance();     // i.e. Base f3 = new Base() in java
 
 // Define a default route
 $f3->route('GET /', function() {
-    echo '<h1>Hello Fat Free!</h1>';
+    //echo '<h1>Hello Fat Free!</h>';
+    $view = new Template();
+    echo $view->render('views/home.html');
 });
 
 // Run Fat-Free
